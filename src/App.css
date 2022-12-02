@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  height: 15vh;
+  background-color: rgb(4, 195, 253);
+}
+
+.city-img {
+  object-fit: cover;
+}
+
+.weather-jumbotron {
+  height: 25vh;
+  background-image: url("https://i.gifer.com/embedded/download/1KL8.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1300px;
+}
