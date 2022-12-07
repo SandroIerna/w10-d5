@@ -1,3 +1,5 @@
+// NOT USED ANYMORE
+
 import { Container } from "react-bootstrap";
 
 const PageFooter = () => {

@@ -1,3 +1,5 @@
+// NOT USED ANYMORE
+
 import { Navbar, Nav } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";

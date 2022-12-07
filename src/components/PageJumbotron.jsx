@@ -1,3 +1,5 @@
+// NOT USED ANYMORE
+
 import { Container, Row, Col } from "react-bootstrap";
 
 const Jumbotron = () => {

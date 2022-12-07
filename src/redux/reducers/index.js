@@ -3,7 +3,14 @@ const initialState = {
     name: "",
     latitude: null,
     longitude: null,
-    weather: { temperature: null, weather: "" },
+    weather: {
+      temperature: null,
+      weather: "",
+      icon: "",
+      humidity: "",
+      sunset: "",
+      sunrise: "",
+    },
   },
   favourites: { cities: [] },
 };
@@ -49,10 +56,16 @@ const mainReducer = (state = initialState, action) => {
       return {
         ...state,
         city: {
-          ...state.city,
+          latitude: action.payload.lat,
+          longitude: action.payload.lon,
+          name: action.payload.name,
           weather: {
             temperature: action.payload.main.temp,
             weather: action.payload.weather[0].description,
+            icon: action.payload.weather[0].icon,
+            humidity: action.payload.main.humidity,
+            sunset: action.payload.sys.sunset,
+            sunrise: action.payload.sys.sunrise,
           },
         },
       };
